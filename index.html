@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="德州扑克,扑克">
+    <meta name="keywords" content="智友互动">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-title" content="智友互动" />
+    <!-- 站标 -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/libs/amazeui.min.css" />
+    <title>运营后台</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+
+<!-- 头部 -->
+<header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <h1><a href="javascript:;" class="tpl-logo">
+            <img src="favicon.png" alt="">
+        </a></h1>
+    </div>
+
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+
+            <li class="am-dropdown" data-am-dropdown="" data-am-dropdown-toggle="">
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="am-text-danger">王玉芳</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user06.png"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li class="am-dropdown" data-am-dropdown="" data-am-dropdown-toggle="">
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="am-icon-sitemap"></span> 站点首页
+                </a>
+            </li>
+            <li class="am-dropdown" data-am-dropdown="" data-am-dropdown-toggle="">
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="am-icon-cubes"></span> 后台首页
+                </a>
+            </li>
+            <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<!-- 左侧 -->
+<div class="tpl-left-nav tpl-left-nav-hover">
+    <div class="tpl-left-nav-title">
+        智友管理列表
+    </div>
+    <div class="tpl-left-nav-list">
+        <ul class="tpl-left-nav-menu">
+            <li class="tpl-left-nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="am-icon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <!-- 系统设置 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-gear"></i>
+                    <span>系统设置</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>后台设置</span>
+                        </a>
+
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>修改密码</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>更新缓存</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>文字列表</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 权限管理 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-key"></i>
+                    <span>权限管理</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>角色管理</span>
+                        </a>
+
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>职员管理</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 比赛管理 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-gamepad"></i>
+                    <span>比赛管理</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>SNG模板</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>SNG盲注</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT模板</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT场次配置</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT奖励列表</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT盲注</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT实例删除</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>暴击赛 模板</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>暴击赛 权重配置</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>暴击赛 盲注</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>暴击赛 奖池相关</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 商城管理 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-shopping-cart"></i>
+                    <span>商城管理</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>购钻列表</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>兑换券列表</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>钻石兑换积分列表</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>卡券库存管理</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>卡券人工审核</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 收入 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-cny"></i>
+                    <span>收入</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>充值明细</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>数据汇总</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>付费玩家</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>钻石发放</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 玩家管理 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-users"></i>
+                    <span>玩家管理</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>玩家列表</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>分享情况</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>分享配置</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>分享统计</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 比赛结果 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-trophy"></i>
+                    <span>比赛结果</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>SNG结果查询</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>MTT结果查询</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>暴击结果查询</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- 日志 -->
+            <li class="tpl-left-nav-item">
+                <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <i class="am-icon-book"></i>
+                    <span>日志</span>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                </a>
+                <ul class="tpl-left-nav-sub-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>钻石明细</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>积分明细</span>
+                        </a>
+                        <a href="javascript:void(0);">
+                            <i class="am-icon-angle-right"></i>
+                            <span>登陆明细</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- 右侧 -->
+
+<div class="tpl-content-wrapper">
+  <!--   <div class="tpl-content-page-title">
+        系统
+    </div> -->
+    <ol class="am-breadcrumb">
+        <li><a href="#">系统</a></li>
+        <li><a href="#">系统设置</a></li>
+        <li class="am-active">后台设置</li>
+    </ol>
+    <div class="tpl-portlet-components">
+       <!--  <div class="portlet-title">
+            <div class="caption font-green bold">表单</div>
+        </div> -->
+
+        <div class="tpl-block ">
+            <div class="am-g tpl-amazeui-form">
+                <div class="am-u-sm-12 am-u-md-9">
+                    <form class="am-form am-form-horizontal">
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">后台入口</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" placeholder="">
+                                <small>若改变，请务必相应的地方如文件夹名称等.</small>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">后台主题</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" placeholder="">
+                                <small>后台主题模板</small>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">后台语言</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" placeholder="">
+                                <small>后台使用语言</small>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">后台LOGO</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" placeholder="">
+                                <small>左上角LOGO自定义路径</small>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">后台网页标题</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" placeholder="">
+                                <small>用于显示网页标题</small>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">插件开发模式</label>
+                            <div class="am-u-sm-9">
+                                <label class="am-radio-inline">
+                                <input type="radio"  value="" name="docInlineRadio"> 开启
+                                </label>
+                                <label class="am-radio-inline">
+                                <input type="radio" name="docInlineRadio"> 关闭
+                                <small>开启该选项后每次请求都会自动刷新插件缓存</small>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">插件开发模式</label>
+                            <div class="am-u-sm-9">
+                                <label class="am-radio-inline">
+                                <input type="radio"  value="" name="docInlineRadio"> 开启
+                                </label>
+                                <label class="am-radio-inline">
+                                <input type="radio" name="docInlineRadio"> 关闭
+                                <small>开启该选项后每次请求都会自动刷新插件缓存</small>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">插件开发模式</label>
+                            <div class="am-u-sm-9">
+                                <label class="am-radio-inline">
+                                <input type="radio"  value="" name="docInlineRadio"> 开启
+                                </label>
+                                <label class="am-radio-inline">
+                                <input type="radio" name="docInlineRadio"> 关闭
+                                <small>开启该选项后每次请求都会自动刷新插件缓存</small>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="am-form-group">
+                            <div class="am-u-sm-9 am-u-sm-push-3">
+                                <button type="button" class="am-btn am-btn-primary">保存后台设置</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src='assets/libs/jquery.min.js'></script>
+<script type="text/javascript" src='assets/js/index.js'></script>
+</html>
